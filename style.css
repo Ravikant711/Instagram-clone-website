@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.profile-section-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.profile-header-container {
+    width: 935px;
+    margin-left: 245px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.profile-picture {
+    width: 291px;
+    height: 229px;
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.profile-picture-info-container {
+    width: 613px;
+}
+
+.profile-information {
+    display: flex;
+    align-items: center;
+    color: rgb(38, 38, 38);
+    margin-top: 35px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+}
+
+.username {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.btn {
+    padding: 8px 17px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(224, 222, 222);
+}
+
+#edit-btn {
+    margin-right: 3px;
+}
+
+#ad-btn {
+    margin-right: 12px;
+}
+
+.setting-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.post-follower-following {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 45px;
+    margin-bottom: 25px;
+    color: rgb(38, 38, 38);
+}
+
+.num {
+    font-weight: 500;
+}
+
+.profile-bio-section {
+    font-size: 14px;
+}
+
+.ravi-name {
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.bio-illustration {
+    color: rgb(142, 142, 142);
+}
+
+.link {
+    color: rgb(0, 55, 107);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* highlight section */
+
+.highlight-section {
+    width: 935px;
+    margin-left: 245px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 49px;
+    margin-bottom: 56px;
+}
+
+.highlight-icon {
+    width: 84px;
+    height: 84px;
+    border-radius: 42px;
+    border: 1px solid rgb(202, 200, 200);
+    display: grid;
+    place-items: center;
+}
+
+.highlight-picture {
+    width: 77px;
+    height: 77px;
+    border-radius: 50px;
+}
+
+#plus-icon {
+    width: 44px;
+    height: 44px;
+}
+
+.highlight-txt {
+    font-size: 12px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+/* sidebar section */
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 245px;
+    height: 100%;
+    border-right: 1px solid rgb(202, 202, 202);
+    background-color: #fff;
+
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-left: 11px;
+    width: 100%;
+}
+
+.instagram-logo {
+    width: 196px;
+    margin: 8px 0 0 0;
+    padding: 32px 12px;
+}
+
+.instagram-logo .instagram-logo-pic {
+    width: 103px;
+    height: 30px;
+}
+
+.sidebar-link {
+    width: 196px;
+    height: 48px;
+    padding: 8px 12px 20px 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 19px;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: transform 0.1s;
+}
+
+.sidebar-link:hover img{
+    transform: scale(1.06);
+}
+
+.sidebar-link:hover {
+    background-color: rgb(249, 251, 251);
+}
+
+.sidebar-link .profile-logo {
+    border-radius: 50%;
+}
+
+.sidebar-link div{
+    font-size: 15px;
+}
+
+.sidebar img {
+    width: 24px;
+    height: 24px;
+}
+
+/* post reels saved tagged section */
+
+.post-reels-section {
+    width: 935px;
+    margin-left: 245px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(202, 202, 202);
+    padding: 19px 0;
+    gap: 50px;
+}
+
+.post-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.post-flex img {
+    width: 12px;
+    height: 12px;
+}
+
+.text-area {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(142, 142, 142);
+}
+
+/* post-reels-section */
+
+.post-picture-section {
+    max-width: 935px;
+    margin-left: 245px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-shrink: 1;
+    gap: 26px;
+}
+
+.post-photos {
+    width: 293px;
+    height: 293px;
+    position: relative;  
+    background-color: black;
+    cursor: pointer;
+}
+
+.post-illustration {
+    position: relative;
+}
+
+.reel-icon {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
+
+.reel-icon img {
+    width: 16px;
+    height: 16px;
+}
+
+.post-pic {
+    width: 100%;
+    height: 100%;
+}
+
+.post-photos:hover .post-pic {
+    opacity: 71%;
+}
+
+.likes-comment-container {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0s;
+}
+
+.post-photos:hover .likes-comment-container {
+    opacity: 1;
+}
+
+.likes-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.like, .comment {
+    width: 18px;
+    height: 20px;
+}
+
+.like-comment-text {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* footer section area */
+
+.footer-section {
+    width: 1050px;
+    margin-left: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.footer-section-first li{
+    font-size: 12px;
+    list-style: none;
+    font-weight: 400;
+    color: rgb(142, 142, 142);
+}
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+.footer-first {
+    display: flex;
+    margin-top: 21px;
+    margin-bottom: 15px;
+}
+
+.footer-second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+    margin-bottom: 50px;
+}
+
+.languages .all-language {
+    border: none;
+    font-size: 12px;
+    color: rgb(142, 142, 142);
+    outline: none;
+}
+
+/* Mobile responsive */
+
+@media screen and (max-width : 1263px){
+    
+    .post-picture-section {
+        width: 100%;
+        margin-left: 200px;
+    }
+    
+    .sidebar-link div{
+        display: none;
+    }
+
+    .instagram-logo img{
+        display: none;
+    }
+
+    .sidebar {
+        width: 80px;
+        overflow: hidden;
+    }
+
+
+}
+
+@media screen and (max-width : 764px){
+    
+    .post-picture-section {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-section {
+        display: none;
+    }
+    
+    .sidebar {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar-container {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5px;
+    }
+
+    .instagram-logo:nth-child(1) {
+        display: none;
+    }
+
+    .sidebar-link {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    .sidebar-link img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sidebar-link:nth-child(3) {
+        display: none;
+    }
+    .sidebar-link:nth-child(7) {
+        display: none;
+    }
+    .sidebar-link:nth-child(10) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .post-picture-section {
+        gap: 3px;
+    }
+
+    .profile-header-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 107px;
+        height: 107px;
+    }
+
+    .highlight-section {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+}
