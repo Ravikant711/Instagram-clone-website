@@ -1,2 +1,2 @@
-# Instagram-clone-wesite
+# Instagram-clone-website
 Instagram profile section clone website.
